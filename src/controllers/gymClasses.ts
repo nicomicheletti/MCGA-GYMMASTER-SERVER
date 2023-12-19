@@ -1,8 +1,6 @@
 import { RequestHandler } from "express";
-import createHttpError from "http-errors";
 import GymClassModel from "../models/gymClasses";
 import createHttpError from "http-errors";
-import mongoose from "mongoose";
 import mongoose from "mongoose";
 
 export const getGymClasses: RequestHandler = async (req, res, next) => {
