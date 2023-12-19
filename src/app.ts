@@ -1,18 +1,15 @@
 import "dotenv/config";
 import express, { NextFunction, Request, Response } from "express";
-import GymClassModel from "./models/gymClasses";
+import gymClassesRoutes from "./routes/gymClasses";
+import morgan from "morgan";
 
 const app = express();
 
-app.get("/", async (req, res, next) => {
-    try {
-        const gymClasses = await GymClassModel.find().exec();
-        res.status(200).json(gymClasses);
-        
-    } catch (error) {
-        next(error);
-    }
-});
+app.use(morgan("dev"));
+
+app.use(express.json());
+
+app.use("/api/gymclasses", gymClassesRoutes);
 
 app.use((req, res, next) => {
     next(Error("Endpoint not found"));
