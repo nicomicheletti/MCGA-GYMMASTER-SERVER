@@ -5,6 +5,6 @@ const gymClassSchema = new Schema({
     text: { type: String },
 }, {timestamps: true});
 
-type gymClass = InferSchemaType<typeof gymClassSchema>;
+type GymClass = InferSchemaType<typeof gymClassSchema>;
 
-export default model<gymClass>("gymClass", gymClassSchema);
+export default model<GymClass>("GymClass", gymClassSchema);
