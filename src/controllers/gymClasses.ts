@@ -77,3 +77,24 @@ export const updateGymClass: RequestHandler<UpdateGymClassParams, unknown, Updat
         next(error);
     }
 };
+
+export const deleteGymClass: RequestHandler = async(req, res, next) => {
+    const gymClassId = req.params.gymClassId;
+    try {
+        if (!mongoose.isValidObjectId(gymClassId)) {
+            throw createHttpError(400, "Invalid Gym Class id");
+        }
+
+        const gymClass = await GymClassModel.findById(gymClassId).exec();
+
+        if (!gymClass){
+            throw createHttpError(404, "Gym Class not found");
+        }
+
+        await gymClass.deleteOne();
+
+        res.sendStatus(204);
+    } catch (error){
+        next(error);
+    }
+};
