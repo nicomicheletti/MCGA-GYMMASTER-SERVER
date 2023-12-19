@@ -14,7 +14,7 @@ export const getGymClasses: RequestHandler = async (req, res, next) => {
 
 export const getGymClass: RequestHandler = async (req, res, next) => {
     const gymClassId = req.params.gymClassId;
-    
+
     try {
         if (!mongoose.isValidObjectId(gymClassId)){
             throw createHttpError(400, "Invalid gym class id");

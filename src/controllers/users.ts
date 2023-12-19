@@ -39,7 +39,7 @@ export const signUp: RequestHandler<unknown, unknown, SignUpBody, unknown> = asy
         if(!passwordRaw) {
             throw createHttpError(400, "Password is required");
         }
-        
+
         const existingUsename = await UserModel.findOne({ username: username }).exec();
         if(existingUsename) {
             throw createHttpError(409, "Username already exists");
@@ -52,7 +52,7 @@ export const signUp: RequestHandler<unknown, unknown, SignUpBody, unknown> = asy
 
         const passwordHashed = await bcrypt.hash(passwordRaw, 10);
 
-        const newUser = await UserModel.create({ 
+        const newUser = await UserModel.create({
             username: username,
             email: email,
             password: passwordHashed,
