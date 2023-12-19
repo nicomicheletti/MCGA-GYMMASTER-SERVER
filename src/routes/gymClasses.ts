@@ -9,4 +9,8 @@ router.get("/:gymClassId", GymClassesController.getGymClass);
 
 router.post("/", GymClassesController.createGymClass);
 
+router.patch("/:gymClassId", GymClassesController.updateGymClass);
+
+router.delete("/:gymClassId", GymClassesController.deleteGymClass);
+
 export default router;
