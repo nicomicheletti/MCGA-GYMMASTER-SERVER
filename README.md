@@ -8,8 +8,8 @@ Asignatura a cargo de David Curras y Darío Marañes, es una materia de 4to Año
 
 ## Link de ambos repositorios
 
-[Proyecto Frontend](https://github.com/franbruno6/MCGA-GYMMASTER-APP)
-[Proyecto Backend](https://github.com/nicomicheletti/MCGA-GYMMASTER-SERVER)
+#### [Proyecto Frontend](https://github.com/franbruno6/MCGA-CLIENT)
+#### [Proyecto Backend](https://github.com/nicomicheletti/MCGA-SERVER)
 
 ## Autores
 
