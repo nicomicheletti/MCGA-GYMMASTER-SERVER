@@ -15,5 +15,5 @@ Asignatura a cargo de David Curras y Darío Marañes, es una materia de 4to Año
 
 | Nombre | Mail     | Github                | LinkedIn                |
 | :-------- | :------- | :------------------------- | :------------------------- |
-| Francisco Bruno | franbruno99@gmail.com | [@franbruno6](https://github.com/franbruno6) | [Francisco Bruno](https://www.linkedin.com/in/franciscobruno99/) |
+| Francisco Bruno | franbruno99@gmail.com | [@franbruno6](https://github.com/franbruno6) | [Francisco Bruno](https://www.linkedin.com/in/franbruno6/) |
 | Nicolás Micheletti | nicolasmicheletti@gmail.com | [@nicomicheletti](https://github.com/nicomicheletti) | [Nicolás Micheletti](https://www.linkedin.com/in/namicheletti//) |
